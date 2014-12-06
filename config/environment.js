@@ -27,7 +27,7 @@ module.exports = function (environment) {
       };
 
     ENV['icontrol'] = {
-        host: 'http://localhost:2368',
+        host: 'http://superoxide.azurewebsites.net',
     }
 
     ENV['simple-auth'] = {
