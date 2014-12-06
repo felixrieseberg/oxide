@@ -20,6 +20,12 @@ var User = DS.Model.extend({
     password: DS.attr('string'),
     updated_at: DS.attr('string'),
 
+    // iControl
+    icUsername: DS.attr('string'),
+    icPassword: DS.attr('string'),
+    icSetup: DS.attr('boolean'),
+    icDevices: DS.attr('number'),
+
     // Relations
     devices: DS.hasMany('device', {async: true})
 });

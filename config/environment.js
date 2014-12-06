@@ -26,6 +26,9 @@ module.exports = function (environment) {
         },
       };
 
+    ENV['icontrol'] = {
+        host: 'http://localhost:2368',
+    }
 
     ENV['simple-auth'] = {
         routeAfterAuthentication: 'dashboard',

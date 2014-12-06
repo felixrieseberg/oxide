@@ -560,3 +560,14 @@ li > .bootstrap-switch-square {
         padding-right: 0px;
     }
 }
+
+/* Settings */
+/* --------------------------------------------------------- */
+
+.device.settings.box {
+    padding: 30px;
+}
+
+.input-group.padding {
+    padding-bottom: 10px;
+}

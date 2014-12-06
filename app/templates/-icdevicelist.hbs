@@ -1,0 +1,16 @@
+<ul class="main-list">
+    <li>
+        <small>Name</small>
+        <h4>{{name}}</h4>
+    </li>
+    {{#each pointSetter in setPointFunctions}}
+        <li>
+            <small>{{pointSetter.name}}</small>
+            {{input class='form-control' value=pointSetter.value}}
+        </li>
+    {{/each}}
+    <li>
+        <small>Tags</small>
+        {{ox-tagger value=tagString}}
+    </li>
+</ul>

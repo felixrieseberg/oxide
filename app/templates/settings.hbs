@@ -1,0 +1,24 @@
+<div class="devices-row">
+    <div class="device settings col-md-6">    
+        <div class="device-head">
+            <h5>iControl</h5>
+        </div>
+        <div class="device settings box">
+            <form {{action 'iControlSetup' on='submit'}} >
+                <div class="input-group padding">
+                    <span class="input-group-addon fui-user"></span>
+                    {{input class='form-control login-field' id='icIdent' placeholder='iControl Username' autocomplete="off" value=icUser}}
+                </div>
+                <div class="input-group padding">
+                    <span class="input-group-addon fui-lock"></span>
+                    {{input class='form-control login-field' id='icPass' placeholder='iControl Password' autocomplete="off" type='password' value=icPassword}}
+                </div>
+                {{#if icSetup}}
+                    <button class="btn btn-primary btn-lg btn-block" disabled>iControl Setup</button>
+                {{else}}
+                    <button class="btn btn-primary btn-lg btn-block">Import Devices</button>
+                {{/if}}
+            </form>
+        </div>
+    </div>
+</div>

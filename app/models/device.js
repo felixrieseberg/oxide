@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-var Device = DS.Model.extend({
+export default DS.Model.extend({
     nitrogen_id: DS.attr('string'),
     name: DS.attr('string'),
     status: DS.attr('boolean', {defaultValue: false}),
@@ -15,5 +15,3 @@ var Device = DS.Model.extend({
     // Relations
     owner: DS.belongsTo('user', {async: true})
 });
-
-export default Device;
