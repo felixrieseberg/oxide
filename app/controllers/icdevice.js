@@ -58,8 +58,8 @@ export default Ember.ObjectController.extend({
             }
 
             this.store.find('user', 'me').then(function (foundUser) {
-                var user = 'user=' + foundUser.email,
-                    device = 'device=' + self.get('id'),
+                var user = 'user=' + foundUser.get('email'),
+                    device = 'device=' + self.get('icid'),
                     chosenFunction = 'function=' + setPointFunctionIndex,
                     input, value;
 

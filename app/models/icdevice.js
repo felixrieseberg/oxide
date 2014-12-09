@@ -4,5 +4,6 @@ export default DS.Model.extend({
     name: DS.attr('string'),
     status: DS.attr('boolean', {defaultValue: false}),
     tags: DS.attr(),
+    icid: DS.attr(),
     functions: DS.attr()
 });
